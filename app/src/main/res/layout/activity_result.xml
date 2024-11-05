@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    tools:context=".ResultActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMessage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_marked_email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:gravity="start|center"
+        android:textColor="#0B5F9A"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:lines="1"
+        android:background="@drawable/tv_gradient_background"
+        android:paddingHorizontal="15dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLength="250"
+        android:paddingHorizontal="15dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_grey_background"
+        android:paddingHorizontal="15dp"
+        android:text="@string/clear"/>
+</LinearLayout>
